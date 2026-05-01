@@ -43,3 +43,12 @@ jobs:
       # 3.Checkstyle
       - name: Static Analysis
         run: mvn -B package --file pom.xml
+
+      # 4.Coveralls
+      - name: Generate JaCoCo report
+        run: mvn -B test jacoco:report
+      - name: Upload to Coveralls
+        uses: coverallsapp/github-action@v2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
