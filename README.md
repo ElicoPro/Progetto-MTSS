@@ -22,22 +22,24 @@ mvn install
 È stato configurato il plugin Maven Chekstyle
 
 SonoState implementati i seguenti moduli:
-• BooleanExpressionComplexity
-• CyclomaticComplexity
-• FileLength
-• LineLength
-• MethodLength
-• EmptyCatchBlock
-• FileTabCharacter
-• AvoidStarImport
-• IllegalImport
-• NeedBraces
-• Header
+- BooleanExpressionComplexity
+- CyclomaticComplexity
+- FileLength
+- LineLength
+- MethodLength
+- EmptyCatchBlock
+- FileTabCharacter
+- AvoidStarImport
+- IllegalImport
+- NeedBraces
+- Header
 
 ### Header utilizzato
+```
 ////////////////////////////////////////////////////////////////////
 // Elico Huang 2147952
 // Giovanni Veronese 2145589
 ////////////////////////////////////////////////////////////////////
+```
 
 la build fallisce automaticamente in presenza di violazioni
