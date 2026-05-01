@@ -1,1 +1,14 @@
+////////////////////////////////////////////////////////////////////
+// Elico Huang 2147952
+// Giovanni Veronese 2145589
+////////////////////////////////////////////////////////////////////
 package it.unipd.mtss;
+public class RomanPrinter {
+  public static String print(int num){
+  return printAsciiArt(IntegerToRoman.convert(num));
+  }
+  private static String printAsciiArt(String romanNumber){
+  //TODO
+  return null;
+  }
+}
