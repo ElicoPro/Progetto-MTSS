@@ -51,3 +51,18 @@ SonoState implementati i seguenti moduli:
 ```
 
 la build fallisce automaticamente in presenza di violazioni
+
+## Conversione Numeri Romani
+
+Il progetto include una classe `IntegerToRoman` che permette la conversione di numeri arabi in numeri romani.
+
+Il metodo `convert(int numero)`:
+- accetta valori compresi tra 1 e 1000
+- utilizza un algoritmo greedy
+- gestisce la notazione sottrattiva (IV, IX, XL, XC, CD, CM)
+
+Esempi:
+- 1 → I
+- 4 → IV
+- 9 → IX
+- 58 → LVIII
