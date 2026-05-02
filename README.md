@@ -1,3 +1,6 @@
+[![build](https://github.com/ElicoPro/Progetto-MTSS/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/ElicoPro/Progetto-MTSS/actions/workflows/build.yml)
+![Coverage Status](https://coveralls.io/repos/github/ElicoPro/Progetto-MTSS/badge.svg)
+
 # ROMAN NUMBER CONVERTER
 
 Elico Huang 2147952 <br>
