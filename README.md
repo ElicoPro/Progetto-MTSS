@@ -16,10 +16,15 @@ Il progetto **Roman Number Converter** è un’applicazione Java sviluppata con 
 ## Processo di Build
 
 Il progetto utilizza Maven come tool di build.
-Per buildare utilizzare il comando:
+Oltre a ciò ha un processo di build che viene attivato quando avviene una push o una PR su `main` o `develop`, questo per verificare che il nuovo codice non crei problemi, seguendo i principi della CI.
+Durante il processo di build automatico i test vengono anche inviati a coveralls per l'analisi sul code coverage.
+I comandi utilizzati per la build sono:
 ```bash
-mvn install
+mvn -B compile
+mvn -B checkstyle:check
+mvn -B verify
 ```
+
 ## Analisi statica del codice
 
 È stato configurato il plugin Maven Chekstyle
