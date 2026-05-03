@@ -66,3 +66,23 @@ Esempi:
 - 4 → IV
 - 9 → IX
 - 58 → LVIII
+## Stampa ASCII dei Numeri Romani
+
+Il progetto include la classe `RomanPrinter`, che consente di visualizzare numeri romani in formato ASCII art.
+
+Il metodo `print(int num)`:
+- utilizza `IntegerToRoman.convert(int)` per ottenere la rappresentazione romana
+- costruisce l'output ASCII concatenando le rappresentazioni dei singoli simboli
+- restituisce una stringa composta da 6 righe
+
+Sono supportati i seguenti simboli:
+- I, V, X, L, C, D, M
+
+Esempio di utilizzo:
+
+`\ \ / /
+\ V /
+
+<
+/ . \
+/_/ _\`
