@@ -77,12 +77,3 @@ Il metodo `print(int num)`:
 
 Sono supportati i seguenti simboli:
 - I, V, X, L, C, D, M
-
-Esempio di utilizzo:
-
-`\ \ / /
-\ V /
-
-<
-/ . \
-/_/ _\`
