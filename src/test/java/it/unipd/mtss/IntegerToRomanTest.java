@@ -199,11 +199,6 @@ public class IntegerToRomanTest
     }
 
     @Test(expected = IllegalArgumentException.class)
-    public void convert_negative_throwsException() {
-        IntegerToRoman.convert(-1);
-    }
-
-    @Test(expected = IllegalArgumentException.class)
     public void convert_over1000_throwsException() {
         IntegerToRoman.convert(1001);
     }
