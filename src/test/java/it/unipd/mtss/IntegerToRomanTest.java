@@ -18,6 +18,14 @@ public class IntegerToRomanTest
     }
 
     @Test
+    public void convert_2_to_II()
+    {
+        int input = 2;
+        String result = IntegerToRoman.convert(input);
+        assertEquals("II", result);
+    }
+
+    @Test
     public void convert_3_to_III()
     {
         int input = 3;
@@ -42,6 +50,14 @@ public class IntegerToRomanTest
     }
 
     @Test
+    public void convert_6_to_VI()
+    {
+        int input = 6;
+        String result = IntegerToRoman.convert(input);
+        assertEquals("VI", result);
+    }
+
+    @Test
     public void convert_9_to_IX()
     {
         int input = 9;
@@ -55,6 +71,14 @@ public class IntegerToRomanTest
         int input = 10;
         String result = IntegerToRoman.convert(input);
         assertEquals("X", result);
+    }
+
+    @Test
+    public void convert_14_to_XIV()
+    {
+        int input = 14;
+        String result = IntegerToRoman.convert(input);
+        assertEquals("XIV", result);
     }
 
     @Test
@@ -122,6 +146,14 @@ public class IntegerToRomanTest
     }
 
     @Test
+    public void convert_58_to_LVIII()
+    {
+        int input = 58;
+        String result = IntegerToRoman.convert(input);
+        assertEquals("LVIII", result);
+    }
+
+    @Test
     public void convert_336_to_CCCXXXVI()
     {
         int input = 336;
@@ -146,6 +178,14 @@ public class IntegerToRomanTest
     }
 
     @Test
+    public void convert_449_to_CDXLIX()
+    {
+        int input = 449;
+        String result = IntegerToRoman.convert(input);
+        assertEquals("CDXLIX", result);
+    }
+
+    @Test
     public void convert_888_to_DCCCLXXXVIII()    // PORTAFORTUNA
     {
         int input = 888;
@@ -159,7 +199,7 @@ public class IntegerToRomanTest
     }
 
     @Test(expected = IllegalArgumentException.class)
-    public void convert_under0_throwsException() {
+    public void convert_negative_throwsException() {
         IntegerToRoman.convert(-1);
     }
 

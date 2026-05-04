@@ -12,6 +12,8 @@ Il progetto **Roman Number Converter** è un’applicazione Java sviluppata con 
 - Java 17
 - Maven
 - Git & Github
+- Jacoco & Coveralls
+- Junit 4
 
 ## Processo di Build
 
@@ -77,3 +79,7 @@ Il metodo `print(int num)`:
 
 Sono supportati i seguenti simboli:
 - I, V, X, L, C, D, M
+
+## Test
+
+`IntergerToRomanTest` implementa i test per la classe `IntegerToRoman`, coprendo i principali casi e anche i casi di errore.
