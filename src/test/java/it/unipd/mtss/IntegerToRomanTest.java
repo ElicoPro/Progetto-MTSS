@@ -194,12 +194,14 @@ public class IntegerToRomanTest
     }
 
     @Test(expected = IllegalArgumentException.class)
-    public void convert_0_throwsException() {
+    public void convert_0_throwsException() 
+    {
         IntegerToRoman.convert(0);
     }
 
     @Test(expected = IllegalArgumentException.class)
-    public void convert_over1000_throwsException() {
+    public void convert_over1000_throwsException() 
+    {
         IntegerToRoman.convert(1001);
     }
 }

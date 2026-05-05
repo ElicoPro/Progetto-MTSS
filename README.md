@@ -6,7 +6,7 @@
 Elico Huang 2147952 <br>
 Giovanni Veronese 2145589
 
-Il progetto **Roman Number Converter** è un’applicazione Java sviluppata con Maven che permette la conversione da numeri interi a numeri romani e la loro stampa in **ASCIART**
+Il progetto **Roman Number Converter** è un’applicazione Java sviluppata con Maven che permette la conversione dei primi 1000 numeri da interi a romani e la loro stampa in **ASCIART**.
 
 ## TECNOLOGIE USATE
 - Java 17
@@ -82,4 +82,5 @@ Sono supportati i seguenti simboli:
 
 ## Test
 
-`IntergerToRomanTest` implementa i test per la classe `IntegerToRoman`, coprendo i principali casi e anche i casi di errore.
+`IntergerToRomanTest` implementa i test per la classe `IntegerToRoman`, coprendo i principali casi e anche i casi di errore. 
+`RomanPrinterTest` implementa i test per la classe `RomanPrinter`, coprendo tutti caratteri che possono venire stampati e assicurandosi che le righe stampate siano effettivamente 6.
