@@ -1,5 +1,5 @@
 [![build](https://github.com/ElicoPro/Progetto-MTSS/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/ElicoPro/Progetto-MTSS/actions/workflows/build.yml)
-![Coverage Status](https://coveralls.io/repos/github/ElicoPro/Progetto-MTSS/badge.svg)
+[![Coverage Status](https://coveralls.io/repos/github/ElicoPro/Progetto-MTSS/badge.svg?branch=main)](https://coveralls.io/github/ElicoPro/Progetto-MTSS?branch=main)
 
 # ROMAN NUMBER CONVERTER
 
@@ -15,11 +15,24 @@ Il progetto **Roman Number Converter** è un’applicazione Java sviluppata con 
 - Jacoco & Coveralls
 - Junit 4
 
+## Workflow Git
+
+Il progetto segue il workflow Gitflow:
+- `main` : versione stabile
+- `develop` : integrazione delle feature
+- `feature/...` : sviluppo delle singole funzionalità
+
 ## Processo di Build
 
 Il progetto utilizza Maven come tool di build.
 Oltre a ciò ha un processo di build che viene attivato quando avviene una push o una PR su `main` o `develop`, questo per verificare che il nuovo codice non crei problemi, seguendo i principi della CI.
-Durante il processo di build automatico i test vengono anche inviati a coveralls per l'analisi sul code coverage.
+Durante la pipeline CI vengono eseguiti:
+- compilazione del progetto
+- analisi statica tramite Checkstyle
+- test automatici
+- generazione del report di code coverage con JaCoCo
+- pubblicazione del coverage su Coveralls <br>
+
 I comandi utilizzati per la build sono:
 ```bash
 mvn -B compile
@@ -29,9 +42,9 @@ mvn -B verify
 
 ## Analisi statica del codice
 
-È stato configurato il plugin Maven Chekstyle
+È stato configurato il plugin Maven Checkstyle
 
-SonoState implementati i seguenti moduli:
+Sono stati implementati i seguenti moduli:
 - BooleanExpressionComplexity
 - CyclomaticComplexity
 - FileLength
@@ -82,5 +95,9 @@ Sono supportati i seguenti simboli:
 
 ## Test
 
-`IntergerToRomanTest` implementa i test per la classe `IntegerToRoman`, coprendo i principali casi e anche i casi di errore. 
+`IntegerToRomanTest` implementa i test per la classe `IntegerToRoman`, coprendo i principali casi e anche i casi di errore. 
 `RomanPrinterTest` implementa i test per la classe `RomanPrinter`, coprendo tutti caratteri che possono venire stampati e assicurandosi che le righe stampate siano effettivamente 6.
+
+## Code Coverage
+
+Il progetto raggiunge una copertura del codice superiore all'85%.
