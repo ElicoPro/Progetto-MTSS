@@ -34,12 +34,19 @@ jobs:
 
       # 1.Compilation
       - name: Compile Project
-        run: mvn -B compile --file pom.xml
-      
-      # 2.Test
-      - name: Run Tests
-        run: mvn -B test --file pom.xml
+        run: mvn -B compile
 
-      # 3.Checkstyle
-      - name: Static Analysis
-        run: mvn -B package --file pom.xml
+      # 2.Static analysis
+      - name: Checkstyle
+        run: mvn -B checkstyle:check
+
+      # 3.Test and Coverage
+      - name: Run tests
+        run: mvn -B verify
+
+      # 4.Upload Coverage
+      - name: Upload to Coveralls
+        uses: coverallsapp/github-action@v2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
